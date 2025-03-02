@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+#title{
+    background-color: rgb(11, 1, 69);
+    color:beige;
+    height: 5rem;
+    line-height: 5rem;
+}
+.choice{
+    height: 165px;
+    width: 165px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 1rem rgb(212, 199, 199);
+   
+}
+.choice:hover{
+    background-color: rgb(249, 191, 191);
+    cursor: pointer;
+}
+img{
+    height: 155px;
+    width: 155px;
+    /* object-fit: cover;  *for img to place batter*/ 
+   border-radius: 50%;
+   border: black solid;
+}
+.choices{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    margin-top: 5rem;
+}
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap:5rem;
+    margin-top: 3rem;
+}
+#you,#com,#draw{
+    font-size: 4rem;
+}
+.msg-conteiner{
+    margin-top: 3rem;
+}
+#msg {
+    background-color: blue;
+    color: white;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem white;
+}
+.hide{
+    display: none;
+}
+#start{
+    margin-top: 5rem;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+}
+#startbtn{
+    height: 30%;
+    width: 10%;
+    background-color: rgb(6, 77, 6);
+    color:white;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    box-shadow: 0 0 5rem rgb(201, 188, 188);
+    
+}
+#img{
+    border-radius: 50%;
+    box-shadow: 0 0 5rem rgb(110, 83, 83);
+}
+.divimg{
+    width: 50%;
+   margin-top: 12rem;
+}
+.cont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#game{
+    background-image:url("./rock paper/red2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+.contener{
+    height: 10rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.reset{
+    border-radius: 20%;
+    height: 3rem;
+    width:10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#reset2{
+    background-color:black;
+    color: white;
+    box-shadow: 0 0 1rem rgb(222, 246, 246);
+    height: 2.9rem;
+    width: 9.9rem;
+    border-radius: 20%;
+    border: none;
+}
+.reset:hover{
+    background-color: aqua;
+}
+
+@media(max-width:452px){
+    .choices{
+        flex-wrap: wrap;
+        gap: 2rem;
+    }
+    #msg{
+        font-size: 1.2rem;
+    }
+    .divimg{
+        margin-top: 12rem;
+    }
+    #startbtn{
+        width: 30%;
+    }
+}
+@media(max-width:378px){
+    .choice{
+        height: 9.6rem;
+        width: 9.6rem;
+    }
+    img{
+        height: 9rem;
+        width: 9rem;
+    }
+    #msg{
+        font-size: 1.1rem;
+    }
+    .score-board{
+        gap: 3.2rem;
+    }
+}
